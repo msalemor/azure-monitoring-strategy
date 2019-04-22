@@ -39,7 +39,9 @@ For the items in red, create an Application Instance instance for each of the se
 -->
 ## What to monitor for
 - Entire region goes down
-- Dependent infrastructure service goes down (this includes VNet, App Gw, Traffic Manager)
-- Dependend services (service running as APIs, kubernetes, functions, databases, etc.)
+- Failure in depended infrastructure services including VNet, Application Gateway, Traffic Manager, etc.)
+- Failure in frontend
+- Failure in the dependent services (service running as APIs, kubernetes, functions, databases, etc.)
+  - Note that a failure in Redis cache may not stop the application from working, but it may prevent the application from performing at maximum performance.
 - More resources are needed due to an increase in demand
 
