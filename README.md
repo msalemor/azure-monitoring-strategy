@@ -12,7 +12,7 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 ## Solution Architecture
 
-[Insert diagram]
+[Complex solution.png]
 
 ## Solution
 
