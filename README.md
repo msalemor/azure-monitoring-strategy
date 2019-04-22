@@ -12,7 +12,7 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 ## Solution Architecture
 
-![Test Image 1](Compex Solution.png)
+![Test Image 1](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
 
 ## Solution
 
