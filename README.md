@@ -23,3 +23,10 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
    - For example, suppose the application is able to detect that responses from the server are taking longer than they should. The application then could raise a custom event indicating this condition.
 3) Create an instance of Azure monitor 
 4) Send all Application Insight data to Azure monitor
+
+## What to monitor for
+- Entire region goes down
+- Dependent infrastructure service goes down (this includes VNet, App Gw, Traffic Manager)
+- Dependend services (service running as APIs, kubernetes, functions, databases, etc.)
+- More resources are needed due to an increase in demand
+
