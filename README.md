@@ -14,6 +14,18 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 ![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
 
+## Log Analytics
+
+Create a log analytics instance for the solution (Complex Solution - Analytics)
+
+### Azure Monitor
+
+For the items in organge, turn on diagnostics logs using Azure Monitor and send the logs to Log Analytics
+
+### App Insights
+
+For the items in red, create an Application Instance instance for each of the services.
+
 ## Solution
 
 1) Create an Application Insights instance for each of the services in the solution including for the applications running in the VMs
