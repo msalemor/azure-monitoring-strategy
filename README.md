@@ -4,9 +4,11 @@ A strategy for monitoring a complex solution
 
 ## Problem Statement
 
-Customer has a complex solution that includes App Services, serveless functions, VMs, and containers (k8s). They are not able to have a good monitoring strategy to monitor the application
+Customer has a complex solution that includes App Services deployed to several regions, PaaS Services, serveless functions, VMs, and containers (k8s). They are having problems monitoring the solution comprehensively.
 
 ## Objective
+
+Customer wishes to deploy a comprenhesive monitoring strategy to be able to quickly detect problems and raise alerts individually and accross the solution.
 
 ## Sample Solution
 
