@@ -10,7 +10,7 @@ Customer has a complex solution that includes App Services deployed to several r
 
 Customer wishes to deploy a comprenhesive monitoring strategy to be able to quickly detect problems and raise alerts individually and accross the solution.
 
-## Sample Solution
+## Solution Architecture
 
 [Insert diagram]
 
