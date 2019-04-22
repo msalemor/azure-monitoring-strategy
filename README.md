@@ -10,9 +10,9 @@ Customer has a complex solution that includes App Services deployed to several r
 
 Customer wishes to deploy a comprenhesive monitoring strategy to be able to quickly detect problems and raise alerts individually and accross the solution.
 
-## Solution Architecture
+## Solution diagram (from a monitoring perspective)
 
-![Test Image 1](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
+![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
 
 ## Solution
 
