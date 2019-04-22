@@ -16,9 +16,10 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 ## Solution
 
-1) Create an application instance for each of the services in the solution including for the applications running in the VMs
+1) Create an Application Insights instance for each of the services in the solution including for the applications running in the VMs
 2) Install the SDK and develop the custom events and telemetry
  - Out of the box Application Insights can track exceptions, dependency calls, traces, etc.
- - Additional telemetry can be developed using the SDK
+ - Additional telemetry can be developed using the SDK. This is the recommended practice to make the most of the solution.
+   - For example, suppose the application is able to detect that responses from the server are taking longer than they should. The application then could raise a custom event indicating this condition.
 3) Create an instance of Azure monitor 
 4) Send all Application Insight data to Azure monitor
