@@ -14,7 +14,7 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 ![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
 
-## Log Analytics
+### Log Analytics
 
 Create a log analytics instance for the solution (Complex Solution - Analytics)
 
