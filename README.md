@@ -10,6 +10,10 @@ Customer has a complex solution that includes App Services deployed to several r
 
 Customer wishes to deploy a comprenhesive monitoring strategy to be able to quickly detect problems and raise alerts individually and accross the solution.
 
+## Solution approaches
+
+In order to achieve a comprehensive monitoring apprach, customer is evaluates having one or many Log Analytics instances.
+
 ## Solution diagram (from a monitoring perspective)
 
 ![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
