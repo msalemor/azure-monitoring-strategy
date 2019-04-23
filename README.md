@@ -38,6 +38,21 @@ For the items in red, create an Application Instance instance for each of the se
 4) Send all Application Insight data to Azure monitor
 -->
 ## Monitoring and alerting strategy
+
+<!--
+| Event | Severity | Determination | Action |
+| --- | --- | --- | --- |
+| Entire region goes down | High | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
+| Failure in infrastructure services | High | |
+| Failure in SaaS Services | High | |
+| Failure in IaaS Services | High | |
+
+
+| Event | Determination and Action |
+| --- | --- |
+| Entire region goes down | Determination: <br/> No services reporting from one region <br/> Actions: <ul><li></li></ul> |
+-->
+
 - Entire region goes down
   - All infrastructure services not reporting
   - Frontend and APIs not reporting
