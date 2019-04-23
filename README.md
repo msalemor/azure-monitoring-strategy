@@ -37,8 +37,12 @@ For the items in red, create an Application Instance instance for each of the se
 3) Create an instance of Azure monitor 
 4) Send all Application Insight data to Azure monitor
 -->
-## What to monitor for
+## Monitoring and alerting strategy
 - Entire region goes down
+  - All infrastructure services not reporting
+  - Frontend and APIs not reporting
+  - DR strategy shoulkd kickoff including:
+    - All read and writes should take place from the secondary region
 - Failure in depended infrastructure services including VNet, Application Gateway, Traffic Manager, etc.)
 - Failure in frontend
 - Failure in the dependent services (service running as APIs, kubernetes, functions, databases, etc.)
