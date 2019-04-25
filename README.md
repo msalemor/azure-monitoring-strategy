@@ -46,8 +46,8 @@ For the items in red, create an Application Instance instance for each of the se
 <!--
 | Event | Severity | Determination | Action |
 | --- | --- | --- | --- |
-| Entire region goes down | High | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
-| Failure in infrastructure services | High | |
+| Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
+| Failure in infrastructure services | Critical | |
 | Failure in SaaS Services | High | |
 | Failure in IaaS Services | High | |
 
