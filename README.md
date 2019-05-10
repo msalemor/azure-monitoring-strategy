@@ -43,7 +43,7 @@ For the items in red, create an Application Instance instance for each of the se
 -->
 ## Monitoring and alerting strategy
 
-<!--
+
 | Event | Severity | Determination | Action |
 | --- | --- | --- | --- |
 | Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
@@ -55,7 +55,6 @@ For the items in red, create an Application Instance instance for each of the se
 | Event | Determination and Action |
 | --- | --- |
 | Entire region goes down | Determination: <br/> No services reporting from one region <br/> Actions: <ul><li></li></ul> |
--->
 
 - Entire region goes down
   - All infrastructure services not reporting
