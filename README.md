@@ -1,7 +1,5 @@
 # Monitoring a complex Azure solution
 
-A strategy for monitoring a complex solution
-
 ## Problem Statement
 
 Customer has a complex solution that includes App Services deployed to several regions, PaaS Services, serveless functions, VMs, and containers (k8s). Currently they don't have a comprenhensive strategy to monitor the individual pieces of the solution and comprenhensively.
@@ -17,6 +15,140 @@ In order to achieve a comprehensive monitoring apprach, customer is evaluates ha
 ## Solution diagram (from a monitoring perspective)
 
 ![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
+
+- Create a Log Analytics instance for the solution (i.e. **Complex Solution - Analytics**)
+- For dependent infrastructure and PaaS services (the items in organge), turn on diagnostics logs and metrics using Azure Monitor and send the logs to the Log Analytics instance
+- For the applications (items in red), create an Application Instance instance for each of the applications.
+
+## Comprehensive monitoring strategy
+
+- Understand the fundamentals such as:
+  - Why do we monitor?
+  - the difference between activity and diagnostic logs and metrics, 
+  - leveraging Azure Monitor and Application Insights, 
+  - Log Analytics.
+- Quickly identify security, performance, and availability issues by analyzing the telemetry, activity logs and diagnostic data to be able to restore unhealthy or underperforming systems to healthy state.
+
+## Monitoring Fundamentals
+
+### Why do we monitor?
+
+- Is the service healthy?
+- Is the service available (different locations)?
+- Is the service secure?
+- Is the service performing as expected?
+- Is the server adhering to compliance?
+- What does a service depend upon?
+
+## Azure Monitor
+
+- Single source for monitoring Azure Resources
+- Gives insights into metrics
+- Activity and Diagnostics Logs
+- Alerts from different sources including Azure Monitor, Log Analytics and Application Insights
+- Fast metric pipelines enabling time critical alerts and notifications
+
+##  Activity Logs
+
+Provides insights into all operations performed on resources within a subscription
+
+- Operation performed
+- Time
+- User or service performing the operation
+- JSON can be view of exactly what change occurred
+- Queries can be created and saved/pinned
+- Logs are stored for 90 days. 
+  -	For longer retention send it to Log Analytics
+
+## Diagnostics Logs
+
+- Resource-level logs providing insight into operations within the specific resource. These can be exported to:
+  - Azure Storage
+  - Log Analytics Workspace
+  - EventHubs (integration with Splunk, etc.)
+  - Configured centrally in Azure Monitor (or on each resource via its Diagnostic logs settings)
+
+## Metrics
+
+- Provides visibility into performance and health of workloads via metrics (performance counters) emitted by most resources
+- Default of one-minute frequency are automatically available
+- Azure Monitor provides a central location to view metrics for all resources within the subscription
+
+## Dashboards
+
+- Supports multiple dashboards
+- Multiple Charts can be added to dashboards
+- Dashboards can be download and uploaded in JSON format
+- Dashboards can be shared with access control to restrict who can utilize them
+
+Links:
+- [Azure Portal Dashboards](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards)
+
+### Status.azure.com
+
+- Allows you to view the state of resources across all Azure regions and allows you to create a customized view of the state of these resources and regions you care about.
+
+### Dashboard - Guidance and Recommendations
+
+
+## Action Groups
+
+- Action be used by multiple alerts
+- Action group is made up of one or more actions (Name, action type, details of the action)
+- Action types can trigger automated actions, contact groups and integrate with ITSM systems
+
+### Action Groups - Guidance and Recommendations
+
+- Setup at least on action group to manage alert
+
+## Alerts
+
+- Choose a scope (subscription, resource group, resource, region)
+- Create a condition
+- Select or create an action
+- Name the alert and set the severity
+
+### Alerts - Guidance and Recommendations
+
+- Create meaningful alerts
+
+## Application Insights
+
+- Application insights constantly monitors the application for performance and problems
+- Can perform analytics (with Azure monitor) to understand anomalies and then alert on those
+- Baselines are established and if the baseline is stepped outside above or below then notified.
+- Monitor for application can be done from within Visual Studio or from the portal
+- Alerts can be created to proactively notify to enable resolution before customer s impacted with granular detail of the cause
+
+### Application Insights - Guidance and Recommendations
+
+- Deploy an Application Insight instance per application per region
+- Add the SDK to the application to take advantage of custom telemetry and custom events
+- You can perform aggregated queries from Log Analytics to monitor and alert across applications and tiers:
+
+```union withsource= SourceApp
+app('Contoso-app1').requests, 
+app('Contoso-app2').requests,
+app('Contoso-app3').requests,
+app('Contoso-app4').requests,
+app('Contoso-app5').requests
+```
+
+## Log Analytics
+
+- Log analytics ingests logs from many sources and in different formats including metrics typically in Azure Monitor
+- A workspace is an instance of Log Analytics and multiple workspaces can exist within a subscription
+- Queries are executed against the logs to produce insights in the state of systems
+- Manage solutions build on logs and queries to offer service-based insight, for example AD health, path status and SQL best practices.
+- Data can be retained for a configured period
+
+### Log Analytics - Guidance and Recommendations
+
+- One instance per region
+- By mindful of retention and cost
+
+
+A strategy for monitoring a complex solution
 
 ### Log Analytics
 
