@@ -103,6 +103,7 @@ Links:
 
 ### Dashboard - Guidance and Recommendations
 
+- Building the graphs will help with identify the thresholds that need to be alerted on.
 
 ## Action Groups
 
