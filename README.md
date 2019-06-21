@@ -67,12 +67,18 @@ Provides insights into all operations performed on resources within a subscripti
   - Log Analytics Workspace
   - EventHubs (integration with Splunk, etc.)
   - Configured centrally in Azure Monitor (or on each resource via its Diagnostic logs settings)
+  
+Links:
+- [Diagnostic logs schema](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-schema)
 
 ## Metrics
 
 - Provides visibility into performance and health of workloads via metrics (performance counters) emitted by most resources
 - Default of one-minute frequency are automatically available
 - Azure Monitor provides a central location to view metrics for all resources within the subscription
+
+Links:
+- [Metrics Supported](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported)
 
 ## Dashboards
 
@@ -133,6 +139,10 @@ app('Contoso-app3').requests,
 app('Contoso-app4').requests,
 app('Contoso-app5').requests
 ```
+
+Links:
+
+- [Cross workspace query](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/cross-workspace-query)
 
 ## Log Analytics
 
