@@ -75,8 +75,8 @@ Provides insights into all operations performed on resources within a subscripti
   - EventHubs (integration with Splunk, etc.)
   - Configured centrally in Azure Monitor (or on each resource via its Diagnostic logs settings)
   
-Links:
-- [Diagnostic logs schema](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-schema)
+> Links:<br/>- [Diagnostic logs schema](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-schema)
+
 
 ## Metrics
 
