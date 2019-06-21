@@ -26,10 +26,10 @@ Critical events to monitor for:
 | Event | Severity | Determination | Action |
 | --- | --- | --- | --- |
 | Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
-| Failure on infrastructure services | Critical | |
-| Failure on dependent SaaS, IaaS, or PaaS Services | Critical | |
-| Failure on dependent application | Critical | |
-
+| Dependent infrastructure failure | Critical | |
+| Dependent PaaS, IaaS, SaaS failure | Critical | |
+| Dependent Application failure | Critical | |
+| Performance degradation | High | |
 
 ## Comprehensive monitoring strategy
 
