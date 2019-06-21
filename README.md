@@ -21,6 +21,15 @@ For the solution, some activites could include:
 - For dependent infrastructure and PaaS services (the items in organge), turn on diagnostics logs and metrics using Azure Monitor and send the logs to the Log Analytics instance
 - For the applications (items in red), create an Application Insight instance for each of the applications.
 
+Critical events to monitor for:
+
+| Event | Severity | Determination | Action |
+| --- | --- | --- | --- |
+| Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
+| Failure on infrastructure services | Critical | |
+| Failure on dependent SaaS, IaaS, or PaaS Services | Critical | |
+| Failure on dependent application | Critical | |
+
 
 ## Comprehensive monitoring strategy
 
@@ -162,7 +171,7 @@ Links:
 - One instance per region
 - By mindful of retention and cost
 
-
+<!--
 A strategy for monitoring a complex solution
 
 ### Log Analytics
@@ -177,7 +186,7 @@ For the items in organge, turn on diagnostics logs using Azure Monitor and send 
 
 For the items in red, create an Application Instance instance for each of the services.
 
-<!--
+
 ## Solution
 
 1) Create an Application Insights instance for each of the services in the solution including for the applications running in the VMs
@@ -187,16 +196,9 @@ For the items in red, create an Application Instance instance for each of the se
    - For example, suppose the application is able to detect that responses from the server are taking longer than they should. The application then could raise a custom event indicating this condition.
 3) Create an instance of Azure monitor 
 4) Send all Application Insight data to Azure monitor
--->
+
 ## Monitoring and alerting strategy
 
-
-| Event | Severity | Determination | Action |
-| --- | --- | --- | --- |
-| Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
-| Failure in infrastructure services | Critical | |
-| Failure in SaaS Services | High | |
-| Failure in IaaS Services | High | |
 
 
 | Event | Determination and Action |
@@ -214,3 +216,4 @@ For the items in red, create an Application Instance instance for each of the se
   - Note that a failure in Redis cache may not stop the application from working, but it may prevent the application from performing at maximum performance.
 - More resources are needed due to an increase in demand
 
+-->
