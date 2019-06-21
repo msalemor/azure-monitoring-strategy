@@ -16,9 +16,11 @@ In order to achieve a comprehensive monitoring apprach, customer is evaluates ha
 
 ![Complex solution](https://github.com/msalemor/azuremonitoring/blob/master/Complex%20Solution.png)
 
-- Create a Log Analytics instance for the solution (i.e. **Complex Solution - Analytics**)
+For the solution, some activites could include:
+- Creating a Log Analytics instance for the solution (i.e. **Complex Solution - Analytics**)
 - For dependent infrastructure and PaaS services (the items in organge), turn on diagnostics logs and metrics using Azure Monitor and send the logs to the Log Analytics instance
-- For the applications (items in red), create an Application Instance instance for each of the applications.
+- For the applications (items in red), create an Application Insight instance for each of the applications.
+
 
 ## Comprehensive monitoring strategy
 
@@ -151,6 +153,9 @@ Links:
 - Queries are executed against the logs to produce insights in the state of systems
 - Manage solutions build on logs and queries to offer service-based insight, for example AD health, path status and SQL best practices.
 - Data can be retained for a configured period
+
+Links:
+- [Manage access](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-access)
 
 ### Log Analytics - Guidance and Recommendations
 
