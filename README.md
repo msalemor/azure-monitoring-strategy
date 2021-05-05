@@ -16,7 +16,7 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 - **Retention Period:**
 - **Log Analytics Workspace:** A data repository where all logs and metrics are stored.
   - **Kusto Query Languange (KQL):** Language used to query Log Analytics
-- Diagnostics settings: Location where logs and metrics can be sent including Log Analytics, Event Hubs, Storage Accounts.
+- **Diagnostics settings:** Location where logs and metrics can be sent including Log Analytics, Event Hubs, Storage Accounts.
 
 ## Sample Solution diagram (from a monitoring perspective)
 
