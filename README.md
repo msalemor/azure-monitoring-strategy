@@ -1,4 +1,4 @@
-# Monitoring a complex Azure solution
+# Monitoring A Complex Azure Solution
 
 ## Problem Statement
 
