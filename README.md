@@ -32,10 +32,10 @@ Critical events to monitor for:
 | Event | Severity | Determination | Action |
 | --- | --- | --- | --- |
 | Entire region goes down | Critical | All services from a single region not reporting | Activate DR strategy <br/> - Step 1 |
-| Dependent infrastructure failure | Critical | |
-| Dependent PaaS, IaaS, SaaS failure | Critical | |
-| Dependent Application failure | Critical | |
-| Performance degradation | High | |
+| Dependent infrastructure failure | Critical | For example, not network connectivity | Open a suppor ticket and activate DR strategy |
+| Dependent PaaS, IaaS, SaaS failure | Critical | For example, Azure SQL Server failure | open a support ticket |
+| Dependent Application failure | Critical | For example, an on-prem service is not responding | Review logs and escalate issue |
+| Performance degradation | High | For example, cache store is not responding | Review logs and open a support ticklet |
 
 ## Comprehensive monitoring strategy
 
