@@ -12,10 +12,10 @@ Customer wishes to deploy a comprenhesive monitoring strategy to be able to quic
 
 - **Activity Log:** Management plane operations (who, what, when). Information includes operation performed, timestamp, user or service performing the operation). Logs by default are stored for 90 days.
 - **Diagnostic Log:** Resource level logs providing information about the specific resource.
-- Metric: Point in time measurement (cpu utilitization, memory usage, etc.). Default is one-minute frequence and are automatically available. Default retantion is 93 days.
-- Retention Period:
-- Log Analytics Workspace: A data repository where all logs and metrics are stored.
-  - Kusto Query Languange (KQL): Language used to query Log Analytics
+- **Metric:** Point in time measurement (cpu utilitization, memory usage, etc.). Default is one-minute frequence and are automatically available. Default retantion is 93 days.
+- **Retention Period:**
+- **Log Analytics Workspace:** A data repository where all logs and metrics are stored.
+  - **Kusto Query Languange (KQL):** Language used to query Log Analytics
 - Diagnostics settings: Location where logs and metrics can be sent including Log Analytics, Event Hubs, Storage Accounts.
 
 ## Sample Solution diagram (from a monitoring perspective)
