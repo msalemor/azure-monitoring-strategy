@@ -48,6 +48,10 @@ Critical events to monitor for:
 
 ## Monitoring Fundamentals
 
+## Monitoring Overview
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/overview
+
 ### Why do we monitor?
 
 - Is the service healthy?
